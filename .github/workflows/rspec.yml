@@ -50,7 +50,7 @@ jobs:
           RAILS_ENV: test
 
       - name: Run RSpec
-        run: bundle exec rspec .
+        run: bundle exec rspec spec/requests/
         env:
           RAILS_ENV: test
 
