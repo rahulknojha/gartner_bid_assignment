@@ -33,7 +33,7 @@ jobs:
             ${{ runner.os }}-gems-
       - name: Install dependent libraries
         run: |
-          sudo apt-get install sqlite sqlite-dev sqlite-libs tzdata
+          sudo apt-get install sqlite3
 
 
       - name: Install gems
