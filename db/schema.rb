@@ -10,14 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 20_221_224_152_951) do
-  create_table 'bids', force: :cascade do |t|
-    t.string 'country'
-    t.string 'category'
-    t.string 'channel'
-    t.decimal 'amount'
-    t.datetime 'created_at', null: false
-    t.datetime 'updated_at', null: false
-    t.index %w[country category channel], name: 'index_bids_on_country_and_category_and_channel'
+ActiveRecord::Schema[7.0].define(version: 2022_12_24_152951) do
+  create_table "bids", force: :cascade do |t|
+    t.string "country"
+    t.string "category"
+    t.string "channel"
+    t.decimal "amount"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["country", "category", "channel"], name: "index_bids_on_country_and_category_and_channel"
   end
+
 end
