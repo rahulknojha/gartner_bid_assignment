@@ -5,7 +5,7 @@ module Api
     class BidsController < ApplicationController
       def index
         bids = ::V1::Bids::Index.new(**index_params).call
-        render json: { bids: bids}
+        render json: { bids: }
       end
 
       private
