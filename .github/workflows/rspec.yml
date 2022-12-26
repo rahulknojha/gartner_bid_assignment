@@ -5,7 +5,7 @@ on:
     types: [opened, synchronize]
 
 jobs:
-  rspec_gec1:
+  rspec:
     name: SPEC
     runs-on: ubuntu-latest     
     steps:
